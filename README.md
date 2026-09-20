@@ -104,20 +104,23 @@ The biological fuel cell generates **nearly 30 times more energy** than required
 The mechanical architecture is designed to withstand severe tropical storms, hydraulic drag from canal debris, and corrosive sewer gas environments ($H_2S$, $NH_3$) through a 3-stage modular assembly:
 
 <p align="center">
-  <img src="docs/images/tripartite_mechanical_cad.jpg" alt="Tripartite Mechanical Form Factor CAD Exploded View" width="950">
+  <img src="docs/images/cad_exploded_view_v2.jpg" alt="Estero-Volt Redesigned Exploded CAD Assembly" width="950">
+</p>
+
+<p align="center">
+  <img src="docs/images/cad_assembled_view_v2.jpg" alt="Estero-Volt Fully Assembled Product Render" width="950">
 </p>
 
 1. **Top Section (Electronic Cap - IP68):**
    - Hermetically sealed with dual Viton fluoropolymer O-rings.
-   - Houses the control PCB, supercapacitors, and quarter-wave helical LoRa antenna.
+   - Houses the circular control PCB, supercapacitors, and quarter-wave helical LoRa antenna.
    - Features a quarter-turn bayonet "twist-and-swap" locking collar. Maintenance personnel can service the electronics without extracting the benthic assembly from the sewer sludge.
-2. **Middle Section (Sensor Housing):**
-   - Suspended from canal bridges or retaining walls above the historical flash-flood high-water mark.
-   - Houses the downward-facing waterproof ultrasonic transducer (IP67) inside a conical polymer baffle to prevent acoustic side-lobe reflections from canal masonry.
+2. **Middle Section (Sensor Housing & Wall Bracket):**
+   - Wall-mounted to canal masonry or bridge piers via a 4-bolt reinforced flange bracket.
+   - Houses the forward-offset downward-facing waterproof ultrasonic transducer (IP67) inside a conical acoustic horn baffle ($45^\circ$ draft) with an undercut drip lip to prevent condensation bridging.
 3. **Bottom Section (Submerged Bio-Reactor):**
-   - Perforated, heavy-gauge non-conductive HDPE enclosure anchored into the anaerobic estero sediment.
-   - Houses the $100\,\text{cm}^2$ Polyaniline (PANI)-modified carbon felt bioanode.
-   - The cathodic interface is suspended at the oxic air-water boundary, utilizing an $MnO_2$ nanoparticle catalyst on a hydrophobic PTFE gas-diffusion layer.
+   - Perforated, heavy-gauge non-conductive HDPE enclosure anchored into the anaerobic estero sediment with bottom stabilizer tines.
+   - Houses the $100\,\text{cm}^2$ Polyaniline (PANI)-modified carbon felt bioanode and titanium current collector mesh, connected to the main unit via an IP68 marine neoprene cable gland.
 
 ---
 
@@ -125,6 +128,7 @@ The mechanical architecture is designed to withstand severe tropical storms, hyd
 
 This repository contains the complete production-grade hardware engineering artifacts for reproducing, certifying, and deploying Estero-Volt nodes:
 
+* [**`docs/MECHANICAL_CAD.md`**](docs/MECHANICAL_CAD.md): **Autodesk Fusion 360 parametric modeling guide**, cross-section cutaways, O-ring gland dimensions, tolerances, and 3D printing parameters.
 * [**`docs/SCHEMATICS.md`**](docs/SCHEMATICS.md): Complete electrical theory, power stages, logic level conversion, BQ25504 MPPT programming calculations, and pin-to-pin wiring netlists.
 * [**`docs/PCB_DESIGN.md`**](docs/PCB_DESIGN.md): 4-layer stackup rules, high-current RF layout rules, star-grounding architecture, creepage/clearance, and $H_2S$ anti-corrosion fabrication standards.
 * [**`docs/FIRMWARE.md`**](docs/FIRMWARE.md): Ultra-low power embedded C++ firmware architecture, RTC wake-up sequencing, JSN-SR04T driver, SX1276 LoRaWAN payload encoding, and adaptive duty cycling algorithms.
