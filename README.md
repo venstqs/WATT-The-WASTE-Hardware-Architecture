@@ -128,6 +128,7 @@ The mechanical architecture is designed to withstand severe tropical storms, hyd
 
 This repository contains the complete production-grade hardware engineering artifacts for reproducing, certifying, and deploying Estero-Volt nodes:
 
+* [**`hardware/cad/`**](hardware/cad/): **Parametric 3D Enclosure Models (`.scad`)**, ready-to-print STL export instructions, and local/online 3D printing guide (Onshape, Fusion 360, FabLabs, JLCPCB).
 * [**`docs/MECHANICAL_CAD.md`**](docs/MECHANICAL_CAD.md): **Autodesk Fusion 360 parametric modeling guide**, cross-section cutaways, O-ring gland dimensions, tolerances, and 3D printing parameters.
 * [**`docs/SCHEMATICS.md`**](docs/SCHEMATICS.md): Complete electrical theory, power stages, logic level conversion, BQ25504 MPPT programming calculations, and pin-to-pin wiring netlists.
 * [**`docs/PCB_DESIGN.md`**](docs/PCB_DESIGN.md): 4-layer stackup rules, high-current RF layout rules, star-grounding architecture, creepage/clearance, and $H_2S$ anti-corrosion fabrication standards.
