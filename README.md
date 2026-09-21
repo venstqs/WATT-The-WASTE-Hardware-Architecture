@@ -93,10 +93,6 @@ $$\int_{0}^{T_{cycle}} P_{BMFC}(t) \cdot \eta_{boost} \, dt \ge E_{sleep} + E_{s
 
 The biological fuel cell generates **nearly 30 times more energy** than required for a standard 15-minute transmission cadence. This guarantees uninterrupted operation even during seasonal bio-inhibition, severe chemical dilution during torrential rains, or temporary sludge scour.
 
-<p align="center">
-  <img src="docs/images/pcb_3d_render.jpg" alt="Estero-Volt Custom Controller PCB 3D Render" width="950">
-</p>
-
 ---
 
 ## 3. Tripartite Mechanical Form Factor

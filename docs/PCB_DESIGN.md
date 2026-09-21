@@ -6,10 +6,6 @@ This document establishes the manufacturing, routing, impedance control, thermal
 
 ## 1. PCB Layer Stackup Architecture
 
-<p align="center">
-  <img src="images/pcb_3d_render.jpg" alt="Estero-Volt Custom Controller PCB 3D Render" width="950">
-</p>
-
 Due to the co-existence of micro-watt, high-impedance analog harvesting circuitry ($10\,\text{M}\Omega$ ladders), high-frequency digital switching ($240\,\text{MHz}$ MCU core), and a high-power $+20\,\text{dBm}$ ($100\,\text{mW}$) RF transceiver, a **4-layer stackup** is strictly mandatory. A 2-layer implementation is rejected due to unavoidable ground return discontinuities, high loop inductance, and poor immunity to ambient EMI in municipal canal conduits.
 
 ### 1.1 Layer Definition (Standard 1.6mm FR4-TG150)
