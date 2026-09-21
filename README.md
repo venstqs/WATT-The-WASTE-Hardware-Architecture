@@ -24,7 +24,7 @@ Estero-Volt eradicates both constraints by converting the biochemical metabolic 
 Harvesting continuous micro-power ($0.30\,\text{V} - 0.50\,\text{V}$, $\sim 3.2\,\text{mW}$ baseline) using an ultra-low-voltage MPPT boost converter (Texas Instruments **BQ25504**), the system buffers electrostatic charge into a high-capacity **supercapacitor bank (16.7 F, 5.5 V rated)**. An **ESP32** microcontroller wakes up via an RTC voltage supervisor interrupt, powers a sealed ultrasonic water-level sensor (**JSN-SR04T**), executes an on-device quantized neural inference model (LSTM) for flood prediction, and broadcasts telemetry over long-range Chirp Spread Spectrum (**LoRaWAN RFM95W**) before returning to sub-$15\,\mu\text{A}$ deep sleep.
 
 <p align="center">
-  <img src="docs/images/system_architecture_diagram.jpg" alt="Estero-Volt System Architecture Diagram" width="950">
+  <img src="docs/images/bmfc_complete_architecture.jpg" alt="Estero-Volt BMFC Complete System Architecture Diagram" width="950">
 </p>
 
 ```
@@ -104,11 +104,11 @@ The biological fuel cell generates **nearly 30 times more energy** than required
 The mechanical architecture is designed to withstand severe tropical storms, hydraulic drag from canal debris, and corrosive sewer gas environments ($H_2S$, $NH_3$) through a 3-stage modular assembly:
 
 <p align="center">
-  <img src="docs/images/cad_exploded_view_v2.jpg" alt="Estero-Volt Redesigned Exploded CAD Assembly" width="950">
+  <img src="docs/images/definitive_exploded_assembly.jpg" alt="Estero-Volt Definitive Exploded CAD Assembly" width="950">
 </p>
 
 <p align="center">
-  <img src="docs/images/cad_assembled_view_v2.jpg" alt="Estero-Volt Fully Assembled Product Render" width="950">
+  <img src="docs/images/definitive_assembled_model.jpg" alt="Estero-Volt Definitive Assembled Product Render" width="950">
 </p>
 
 1. **Top Section (Electronic Cap - IP68):**

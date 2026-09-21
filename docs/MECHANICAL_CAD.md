@@ -14,27 +14,35 @@ In naive early conceptual sketches, remote benthic telemetry nodes were illustra
 **The Fatal Physical Flaw:** An ultrasonic transducer (JSN-SR04T) relies on unobstructed acoustic Time-of-Flight (ToF) echoes, featuring a beam divergence angle of $45^\circ - 75^\circ$ and a minimum blind zone of $20\,\text{cm}$. In a continuous vertical cylinder, acoustic pings bounce directly off the top of the bio-reactor cage or electrode cables rather than the fluctuating canal water surface.
 
 <p align="center">
-  <img src="images/cad_exploded_view_v2.jpg" alt="Estero-Volt Redesigned Exploded CAD Assembly" width="950">
+  <img src="images/definitive_assembled_model.jpg" alt="Estero-Volt Definitive Assembled CAD Model" width="950">
 </p>
 
-### The Revision 2.0 Engineering Solution:
-1. **Separated Operational Domains**:
-   - **Electronic Cap & Sensor Module**: Mounted securely to the canal retaining wall or bridge pier above the historical 100-year flood watermark.
-   - **Forward-Offset Acoustic Horn**: The downward-facing JSN-SR04T transducer is housed inside an angled conical baffle extending outward from the main housing, giving it an unobstructed vertical line-of-sight to the canal water.
-   - **Tethered Benthic Bio-Reactor**: A weighted, perforated cylindrical basket is anchored into the anaerobic estero sediment, connected via an IP68 marine neoprene cable gland.
-2. **Quarter-Turn Twist-and-Swap Bayonet Collar**:
-   - Allows field technicians to twist off the electronic cap in under 5 seconds to swap supercapacitors, replace batteries, or flash firmware without unbolting the mounting bracket or disturbing the benthic biofilm.
+### The Unified Engineering Architecture:
+1. **Top Section (Twist-and-Swap Cap - IP68)**:
+   - Hermetically sealed with dual Viton fluoropolymer O-rings.
+   - Houses the circular control PCB, TI BQ25504 harvester, 3x 50F supercapacitors, ESP32 MCU, and 915 MHz helical LoRa antenna.
+   - Detaches in 5 seconds via a 3-lug bayonet collar without extracting the submerged bio-reactor from canal sediment.
+2. **Middle Section (Sensor Housing & Wall Mount)**:
+   - Wall-mounted to canal masonry or bridge piers via a 4-bolt reinforced flange bracket.
+   - Houses the downward-facing waterproof ultrasonic transducer (IP67) inside a **forward-offset conical acoustic horn ($45^\circ$ flare)** with an undercut drip lip. This gives the sensor an unobstructed vertical line-of-sight to open canal water.
+3. **Bottom Section (Submerged BMFC Bio-Reactor)**:
+   - Rigidly coupled below via a structural spine with internal wiring conduit.
+   - Features an **Upper $MnO_2$ Catalyzed Air-Cathode Sleeve** exposed to dissolved oxygen, and a **Lower Perforated Sludge Basket** housing the PANI-modified carbon felt bioanode anchored into the anaerobic muck by bottom stabilizer fins.
 
 <p align="center">
-  <img src="images/cad_assembled_view_v2.jpg" alt="Estero-Volt Fully Assembled Product Render" width="950">
+  <img src="images/definitive_exploded_assembly.jpg" alt="Estero-Volt Definitive Exploded CAD Assembly" width="950">
 </p>
 
 ---
 
-## 2. Cross-Section & Internal Mechanical Dimensions
+## 2. Internal Mechanical Cross-Section & 2D Outline Blueprint
 
 <p align="center">
-  <img src="images/cad_cutaway_section_v2.jpg" alt="Internal Mechanical Cutaway Section View" width="950">
+  <img src="images/definitive_cutaway_section.jpg" alt="Internal Mechanical Cutaway Section View" width="950">
+</p>
+
+<p align="center">
+  <img src="images/definitive_outline_blueprint.jpg" alt="Minimalist 2D/3D CAD Outline Blueprint for Fusion 360" width="950">
 </p>
 
 ### Critical Engineering Parameters & Tolerances (ISO 2768-m)
