@@ -120,7 +120,26 @@ The mechanical architecture is designed to withstand severe tropical storms, hyd
 
 ---
 
-## 4. Repository Documentation Index
+## 4. End-to-End LoRaWAN Telemetry & Disaster Alert Pipeline (Figure 4)
+
+Estero-Volt integrates seamlessly into municipal flood early warning networks, bridging ultra-low-power field sensor nodes with city-wide disaster response operations and riparian citizen alerts:
+
+<p align="center">
+  <img src="docs/images/figure4_lorawan_pipeline.jpg" alt="Figure 4: End-to-End LoRaWAN Telemetry and Disaster Alert Pipeline to End-Users" width="950">
+</p>
+
+### Pipeline Architecture Breakdown:
+1. **Field Sensing & Data Collection:** The self-powered Estero-Volt tripartite node, wall-mounted in the urban drainage canal (*estero*), samples canal flood depth via its cantilevered ultrasonic transducer powered entirely by the benthic microbial fuel cell (BMFC).
+2. **Chirp Spread Spectrum (CSS) Wireless Transmission:** Telemetry packets are modulated via LoRa 915 MHz Chirp Spread Spectrum, penetrating dense urban concrete infrastructure and multi-path fading over a 5–10 km Non-Line-of-Sight (NLOS) link.
+3. **Municipal Gateway & Backhaul:** Multi-channel LoRaWAN gateways mounted on city telecommunication towers receive the packets and forward them over encrypted cellular (4G/5G) or fiber-optic backhaul.
+4. **Cloud Processing & Rule Engine (Supabase / LNS):** The LoRaWAN Network Server (The Things Network / ChirpStack) and Supabase backend validate CRC payloads, store historical time-series hydrographs, and evaluate dynamic threshold alert logic.
+5. **Real-Time Delivery to End-Users:**
+   - **A. CDRRMO Municipal Disaster Command Center:** Operators monitor live spatial water-level heatmaps, rate-of-rise vectors, and predictive flood inundation models on the centralized Flood Early Warning System (FEWS) console.
+   - **B. Riparian Citizens & Local Communities:** Residents along flood corridors receive automated, localized mobile push notifications and emergency SMS evacuation warnings before flash waters breach street level.
+
+---
+
+## 5. Repository Documentation Index
 
 This repository contains the complete production-grade hardware engineering artifacts for reproducing, certifying, and deploying Estero-Volt nodes:
 
@@ -134,6 +153,7 @@ This repository contains the complete production-grade hardware engineering arti
 
 ---
 
-## 5. License & Open Hardware Compliance
+## 6. License & Open Hardware Compliance
 
 Hardware schematics and PCB designs are licensed under the **CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S)**. Embedded firmware is licensed under the **Apache License 2.0**.
+
