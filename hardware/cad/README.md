@@ -21,6 +21,20 @@ We have provided a fully parametric, open-source 3D CAD script in **OpenSCAD** f
    * `"reactor_only"` — Submerged BMFC sludge basket & anchor fins.
 4. Press **`F5`** to preview, **`F6`** to render, and **`F7`** to export directly as an **`.STL`** file for 3D printing!
 
+### Pre-Exported STL Parts: [`stl/`](stl/)
+
+Don't want to install OpenSCAD? Ready-made meshes are included (GitHub previews them in 3D when clicked):
+
+| File | Part |
+| :--- | :--- |
+| [`1_top_dome.stl`](stl/1_top_dome.stl) | Clear polycarbonate electronics dome |
+| [`2_bayonet_collar.stl`](stl/2_bayonet_collar.stl) | Bayonet locking collar with dual O-ring grooves |
+| [`3_middle_housing.stl`](stl/3_middle_housing.stl) | Middle housing, $45^\circ$ acoustic horn & wall bracket |
+| [`4_bottom_bio_reactor.stl`](stl/4_bottom_bio_reactor.stl) | Submerged BMFC sludge basket & anchor fins |
+| [`5_full_assembly_exploded.stl`](stl/5_full_assembly_exploded.stl) | Full exploded assembly (for posters & pitch decks) |
+
+> Importing into Fusion 360? Insert each part STL separately (Insert → Insert Mesh) so every component stays a separate body instead of one merged mesh.
+
 ---
 
 ## 2. Recommended CAD Software for Custom Modeling
